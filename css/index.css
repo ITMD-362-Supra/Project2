@@ -14,6 +14,12 @@
       padding: 5px;
 	  gap: 5px; 
     }
+	.link-container-bottom {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  margin-left: 10px;
+}
 
     .round-link {
       display: inline-block;
@@ -77,6 +83,7 @@
       transform: translateY(-2px);
     }
 
+
 	.round-linkb:hover {
       background-color: black;
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
@@ -129,8 +136,10 @@
       align-items: center;
       padding: 50px;
 	  gap: 5px; 
-	  justify-content: flex-start;
-	  margin-top:150px;
+	  justify-content: flex-end;
+	  margin-top: 200px;
+	  margin-right:150px
+	  
     }
  div.gallery {
   border:none;
@@ -151,6 +160,7 @@ div.desc {
 
 .responsive {
   padding: 0 6px;
+  gap: 10px;
   float: left;
   width: 24.99999%;
 }
