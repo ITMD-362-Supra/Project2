@@ -4,8 +4,11 @@
       padding: 40px;
       font-family: sans-serif;
       text-align: center;
-	background-color:light-grey;
-     
+      background-image: url("back.png");
+	   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    background-attachment: fixed; 
 	  
     }   
     .link-container {
@@ -14,13 +17,6 @@
       padding: 5px;
 	  gap: 5px; 
     }
-	.link-container-bottom {
-  display: flex;
-  gap: 10px;
-  padding: 20px;
-  margin-left: 10px;
-}
-
     .round-link {
       display: inline-block;
       padding: 15px 30px;
@@ -137,8 +133,8 @@
       padding: 50px;
 	  gap: 5px; 
 	  justify-content: flex-end;
-	  margin-top: 200px;
-	  margin-right:150px
+	  margin-top: 400px;
+	  margin-right:850px
 	  
     }
  div.gallery {
