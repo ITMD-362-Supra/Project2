@@ -14,8 +14,8 @@
 <body>
     <div class="link-container">
         <img src="img/logo.png" alt="Logo">
-		<input type="text" placeholder="">
-		 <a href="#" class="icon-button">
+		    <input type="text" placeholder="Search">
+		    <a href="#" class="icon-button">
             <img src="img/search.jpg" alt="search">
         </a> 
         <a href="#" class="round-link">Free Shipping</a>
@@ -26,11 +26,13 @@
         </a>
     </div>
 
-    <div class="container">
-        <div class= "form-toggle">
-             <button class="toggle-btn" onclick="showLogin()">LogIn</button>
-             <button class="toggle-btn" onclick="showSignup()">Sign Up</button>
+    <div class="form-container">
+        <div class="tabs">
+            <button class="tab-button active" onclick="showLogin()">Log In</button>
+            <button class="tab-button" onclick="showSignup()">Sign Up</button>
         </div>
+        
+        <div class="form-content">
         <div id="login-form" class="form-section">
             <h2>Log In</h2>
             <form action="login-action.php" method="POST">
@@ -42,25 +44,20 @@
                      <label for="password" >Password</label>
                      <input type="password" id="Login-password" name="password" required>
                 </div>
-                <div class="input-group">
-                   <button type="submit">Log In</button>  
+                <button type="submit">Log In</button>  
             </form>
-             </div> 
             <p> Forgot Password?</p>
             <p>By logging in, you agree to the <a href="#">Terms of service</a> and <a href="#">Privacy Policy</a></p>
-            <p>OR</p>
-            <button class="social-login-btn">Log in with Google</button>
-            <p>Need an account? <a href="javascript:void(0);" onclick="showSignup()">Sign Up</a></p>            
         </div>
             
-    <div id="signup-form" class="form-section" style="display: none;">
-        <h2>Sign up</h2>
-        <form action="signup-action.php" method="POST">
-            <div class="input-group">
-                <label for="signup-email"> Email Address</label>
-                <input type="email" id="signup-email" name="email" required>
-            </div>
-            <div class="input-group">                
+        <div id="signup-form" class="form-section" style="display: none;">
+            <h2>Sign up</h2>
+            <form action="signup-action.php" method="POST">
+                <div class="input-group">
+                    <label for="signup-email"> Email Address</label>
+                   <input type="email" id="signup-email" name="email" required>
+                </div>
+                <div class="input-group">                
                 <label for="signup-password" >Password</label>
                 <input type="password" id="signup-password" name="password" required>
             </div>
