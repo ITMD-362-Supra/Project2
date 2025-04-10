@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class= "form-toggle">
+             <button class="toggle-btn" onclick="showLogin()">LogIn</button>
+             <button class="toggle-btn" onclick="showSignup()">Sign Up</button>
+        </div>
+        <div id="login-form" class="form-section">
+            <h2>Log In</h2>
+            <form action="login-action.php" method="POST">
+                <div class="input-group">
+                     <label for="email"> Email Address</label>
+                     <input type="email" id="Login-email" name="email" required>
+                </div>
+                <div class="input-group">                
+                     <label for="password" >Password</label>
+                     <input type="password" id="Login-password" name="password" required>
+                </div>
+                <div class="input-group">
+                   <button type="submit">Log In</button>
+                </div>   
+            </form>
+            <p> Forgot Password?</p>
+            <p>By logging in, you agree to the <a href="#">Terms of service</a> and <a href="#">Privacy Policy</a></p>
+            <p>OR</p>
+            <button class="social-login-btn">Log in with Google</button>
+            <p>Need an account? <a href="javascript:void(0);" onclick="showSignup()">Sign Up</a></p>            
+        </div>
+            
+    <div id="signup-form" class="form-section" style="display: none;">
+        <h2>Sign up</h2>
+        <form action="signup-action.php" method="POST">
+            <div class="input-group">
+                <label for="signup-email"> Email Address</label>
+                <input type="email" id="signup-email" name="email" required>
+            </div>
+            <div class="input-group">                
+                <label for="signup-password" >Password</label>
+                <input type="password" id="signup-password" name="password" required>
+            </div>
+            <button type="submit">Sign Up</button>
+                </div>
+            </form>
+            <p>Already have an account? <a href="javascript:void(0);" onclick="showLogin()">Log In</a></p>           
+     </div>     
+ </div>  
+  
+    <script src="index.js"></script>    
+</body>
+</html>                
+                
+          
+                
+            

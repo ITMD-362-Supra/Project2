@@ -1,0 +1,11 @@
+body {
+    padding: 40px;
+    font-family: "Anton", sans-serif;
+    text-align: center;
+    background-image: url("back.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
