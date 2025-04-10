@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     padding: 40px;
     font-family: "Anton", sans-serif;
     text-align: center;
@@ -7,5 +8,105 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+}
+.round-link {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 999px;
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.round-link-red {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 999px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.round-linkb-red:hover {
+    background-color: black;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.round-link:hover {
+    background-color: black;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.icon-button:hover {
+    background-color: black;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.round-linkb {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 999px;
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.round-link-red {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 999px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.round-link-red:hover {
+    background-color: black;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+
+.round-linkb:hover {
+    background-color: black;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.icon-buttonb:hover {
+    background-color: black;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.round-link-redb {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 999px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.round-link-redb:hover {
+    background-color: black;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
 
 
