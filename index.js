@@ -18,6 +18,9 @@ function showSignup() {
 
   
 
-window.onload = showLogin;
+window.onload = function() {
+  showLogin();
+  
+};
  
 
