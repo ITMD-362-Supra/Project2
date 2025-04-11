@@ -60,6 +60,19 @@ button {
   font-size: 16px;
   transition: bacnground color 0.3 ease; 
 }  
+
+.social-links {
+  color: white;
+  font-size: 16px;
+}
+
+.social-links a {
+   color: white;
+   test-decorations: underline;
+   margin: 0 5px;
+   cursor: pointer;
+   transition: color 0.3s ease;
+}   
   
   
   
