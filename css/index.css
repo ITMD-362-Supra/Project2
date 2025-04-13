@@ -851,7 +851,6 @@ button
 input::placeholder, textarea::placeholder
 {
     color: transparent;
-    font-color: white;
 }
 
 button:hover
@@ -895,7 +894,6 @@ footer {
     height: 15vh;
     width: 100%; 
     margin: 0;
-    opacity: 1px;
     border-top: 1px solid #212121;
     background-image: linear-gradient(to right, black, #420c0c, black);
 }
