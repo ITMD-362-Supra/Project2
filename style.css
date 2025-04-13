@@ -59,7 +59,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  transition: bacnground color 0.3 ease; 
+  transition: background color 0.3 ease; 
 } 
 
 .divider {
@@ -90,7 +90,7 @@ button {
 
 .social-links a {
    color: white;
-   test-decorations: underline;
+   test-decoration: underline;
    margin: 0 5px;
    cursor: pointer;
    transition: color 0.3s ease;
@@ -274,6 +274,6 @@ button {
 }
 
 .form-comtainer a:hover {
-color: darked;
+color: grey;
 }  
   
