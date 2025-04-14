@@ -59,7 +59,6 @@ button {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  transition: bacnground color 0.3 ease; 
 } 
 
 .divider {
@@ -274,7 +273,7 @@ button {
 }
 
 .form-comtainer a:hover {
-color: darked;
+color: grey;
 }  
   
  .search-bar {
@@ -285,4 +284,4 @@ color: darked;
    font-size: 16px;
  }  
   
-    
+
