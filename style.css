@@ -90,7 +90,7 @@ button {
 
 .social-links a {
    color: white;
-   test-decorations: underline;
+   text-decoration: underline;
    margin: 0 5px;
    cursor: pointer;
    transition: color 0.3s ease;
@@ -277,3 +277,12 @@ button {
 color: darked;
 }  
   
+ .search-bar {
+   width: 100%;
+   padding: 10px;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+   font-size: 16px;
+ }  
+  
+    
