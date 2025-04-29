@@ -16,7 +16,7 @@ body {
             padding: 10px;
             border: 2px solid #ccc;
             width: 250px;
-        }
+}
         
 .form-container {
   background-color:rgba(0,0,0,0.6);
@@ -71,10 +71,8 @@ button {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-<<<<<<< HEAD
   transition: background-color 0.3 ease; 
-=======
->>>>>>> 94f555a401a601fe73abd5979c68ba4c58ae1f43
+
 } 
 
 .divider {
