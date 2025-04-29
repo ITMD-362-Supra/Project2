@@ -1,104 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login/Sign Up</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <script src="index.js"></script>  
-    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Sign Up</title>
+  <link rel="stylesheet" href="css/meyers_and_normalize-form_reset.css">
+  <link rel="stylesheet" href="css/index.css">    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <script src="index.js" defer></script>  
 </head>
 <body>
-    <div class="link-container">
-        <img src="img/logo.png" alt="Logo">
-		    <input type="text" placeholder="Search">
-		    <a href="#" class="icon-button">
-            <img src="img/search.jpg" alt="search">
-        </a> 
-        <a href="#" class="round-link">Free Shipping</a>
-        <a href="#" class="round-link">Join Free</a>
-		    <a href="#" class="round-link-red">Log IN</a>
-        <a href="#" class="icon-button">
-            <img src="img/cart.png" alt="cart">
-        </a>
-    </div>
+   <div class="link-container">
+    <a href="contact.html"><img src="img/logo.png" alt="Logo"></a>
+    <input type="text" placeholder="">
+    <a href="contact.html" class="icon-button">
+      <img src="img/search.jpg" alt="Search">
+    </a>
 
-    <div class="form-container">
-        <div class="tabs">
-            <button class="tab-button active" onclick="showLogin()">Log In</button>
-            <button class="tab-button" onclick="showSignup()">Sign Up</button>
-        </div>
+    <a href="#" class="round-link">Free Shipping</a>
+    <a href="#" class="round-link">Join Free</a>
+    <a href="index.html" class="round-link">Contact</a>
+    <a href="page.html" class="round-link-red">Log In</a>
+
+    <a href="#" class="icon-button">
+      <img src="img/cart.png" alt="Cart">
+    </a>
+  </div> 
+
+ <div class="form-container">
+   <div class="tabs">
+     <button class="tab-button active" onclick="showLogin()">Log In</button>
+     <button class="tab-button" onclick="showSignup()">Sign Up</button>
+   </div>
         
-        <div class="form-content">
-        <div id="login-form" class="form-section">
-            <h2>Log In</h2>
-            <form action="login-action.php" method="POST">
-                <div class="input-group">
-                     <label for="email"> Email Address</label>
-                     <input type="email" id="Login-email" name="email" required>
-                </div>
-                <div class="input-group">                
-                     <label for="password" >Password</label>
-                     <input type="password" id="Login-password" name="password" required>
-                </div>
-                <button type="submit">Log In</button>  
-            </form>
-            <p> Forgot Password?</p>
-        </div>
+ <div class="form-content">
+   <div id="login-form" class="form-section">
+     <h2>Log In</h2>
+     <form action="login-action.php" method="post" autocomplete="on">
+       <div class="input-group">
+         <label for="Login-email"> Email Address</label>
+         <input type="email" id="Login-email" name="email" required>
+       </div>
+       <div class="input-group">
+         <label for="Login-password" >Password</label>
+         <input type="password" id="Login-password" name="password" required>
+       </div>
+       <button type="submit">Log In</button>  
+     </form>
+     <p> Forgot Password?</p>
+   </div>
+   <div id="signup-form" class="form-section" style="display: none;">
+     <h2>Sign up</h2>
+     <form action="signup-action.php" method="post">
+       <div class="input-group">
+         <label for="signup-name"> Last Name</label>
+         <input type="text" id="signup-name" name="last_name">
+       </div>
+       <div class="input-group">
+         <label for="signup-email"> Email Address</label>
+         <input type="email" id="signup-email" name="email" required>
+       </div>
+       <div class="input-group">
+         <label for="signup-password" >Password</label>
+         <input type="password" id="signup-password" name="password" required>
+       </div>
+       <div class="input-group">
+         <small>At least 8 characters, 1 uppercase letter, 1 number & 1 symbol</small>
+       </div>
+       <div class="input-group checkbox-group">
+         <input type="checkbox" id="terms" name="terms" required>
+         <label for="terms"> 
+              I have read and agree to the <a href="#">Terms and Conditions</a>
+         </label>
+       </div>
+         <button type="submit">Create Account</button>
+       <div class="divider"><span>OR</span></div>
             
-        <div id="signup-form" class="form-section" style="display: none;">
-            <h2>Sign up</h2>
-            <form action="signup-action.php" method="POST">
-                <div class="input-group">
-                    <label for="signup-name"> Last Name</label>
-                   <input type="name" id="signup-name" name="name" required>
-                </div>
-                <div class="input-group">
-                    <label for="signup-email"> Email Address</label>
-                   <input type="email" id="signup-email" name="email" required>
-                </div>
-                <div class="input-group">                
-                <label for="signup-password" >Password</label>
-                <input type="password" id="signup-password" name="password" required>
-            </div>
-            <div class="input-group">
-                <small>At least 8 characters, 1 uppercase letter, 1 number & 1 symbol</small>
-            </div>
-            <div class="input-group checkbox-group">
-                <input type="checkbox" id="terms" name="terms" required>
-                <label for="terms"> 
-                       I have read and agree to the <a href="#">Terms and Conditions</a>
-                </label>
-            </div>    
-            <button type="submit">Sign Up</button>
-            <div class="divider"><span>OR</span></div>
-            
-            <p class="social-links">
-              <a href='#'>Sign up with Google</a>,
-              <a href='#'>Apple</a>,
-              <a href='#'>Facebook</a>
-            </p>  
-            </form>
-            <p>Already have an account? <a href="javascript:void(0);" onclick="showLogin()">Log In</a></p>           
-     </div>     
- </div>  
- </div> 
+       <p class="social-links">
+         <a href='#'>Sign up with Google</a>,
+         <a href='#'>Apple</a>,
+         <a href='#'>Facebook</a>
+       </p>  
+     </form>
+     <p>Already have an account? <a href="javascript:void(0);" onclick="showLogin()">Log In</a></p>           
+      </div>     
+      </div>  
+      </div> 
      <div class="link-container-bottom">
-        <a href="#" class="round-linkb">News </a>
-        <a href="#" class="round-linkb">About us</a>
-        <a href="#" class="round-linkb">Sale</a>
-        <a href="#" class="round-linkb">Hot Sale</a>
-        <a href="#" class="round-link-redb">New Arrivals</a>
+       <a href="#" class="round-linkb">News </a>
+       <a href="#" class="round-linkb">About us</a>
+       <a href="#" class="round-linkb">Sale</a>
+       <a href="#" class="round-linkb">Hot Sale</a>
+       <a href="#" class="round-link-redb">New Arrivals</a>
 
     </div> 
   
   
 </body>
-</html>                
-                
-          
-                
-            
+</html>
